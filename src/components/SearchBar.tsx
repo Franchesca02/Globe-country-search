@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState } from 'react'
 
 interface SearchBarProps {
@@ -25,7 +24,7 @@ export function SearchBar({ onSearch, recentSearches, loading, placeholder = "Se
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          placeholder="Enter country name"
+          placeholder={placeholder}  
           className="flex-1 px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
